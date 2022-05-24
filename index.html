@@ -7,8 +7,8 @@
   <script>
     tailwind.config = {
       theme: { screens: {
-      'sm': {'min': '390px', 'max': '767px'},
-      // => @media (min-width: 390px and max-width: 767px) { ... }
+      'sm': {'min': '350px', 'max': '767px'},
+      // => @media (min-width: 350px and max-width: 767px) { ... }
 
       'md': {'min': '768px', 'max': '1023px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
@@ -45,13 +45,16 @@
       
   </nav>
 
-<div class="flex flex-col h-screen w-auto justify-center absolute text-white text-[0.5rem] font-light rotate-[270deg]">
-  <div>- Premium market consultants -</div>
-</div>
 
-<div class="w-screen h-screen absolute flex justify-end items-center">
-  <div class="text-white text-lg font-light rotate-[270deg]">
-    . . . . . . 
+<div class="lg:block md:hidden sm:hidden">
+  <div class="flex flex-col h-screen w-auto justify-center absolute text-white text-[0.5rem] font-light rotate-[270deg] ">
+    <div>- Premium market consultants -</div>
+  </div>
+
+  <div class="w-screen h-screen absolute flex justify-end items-center ">
+    <div class="text-white text-lg font-light rotate-[270deg]">
+      . . . . . . 
+    </div>
   </div>
 </div>
 
